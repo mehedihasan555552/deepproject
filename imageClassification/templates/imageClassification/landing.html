@@ -1,0 +1,22 @@
+{% extends 'imageClassification/_layout.html' %}
+
+{% block title %}
+    Landing 
+{% endblock %}
+
+{% block nav %}
+
+{% endblock %}
+
+{% block header %}
+<div class="jumbotron text-center text-white m-0">
+    <div class="jumbotron__container">
+        <h1 class="display-5"> Tumor Image Prediction Tool </h1>
+        <p class="lead">A web applicaton to the Scientists, Doctors, Researchers and other allied professionals for tomour image prediction.</p>
+        <hr class="my-4">
+        <p class="lead">
+        <a class="btn btn-primary btn-lg" href="{% url 'SignupOrLogin' %}" role="button">Get started &RightArrow; </a>
+        </p>
+    </div>
+  </div>
+{% endblock %}
