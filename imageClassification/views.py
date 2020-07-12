@@ -22,7 +22,7 @@ def Landing(request):
     return render(request, 'imageClassification/landing.html')
 
 
-@login_required(login_url='/imageClassification/SignupOrLogin/')
+
 def Index(request):
     global uploadedFile
     global currentUser
