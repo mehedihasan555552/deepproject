@@ -6,7 +6,7 @@ from .cancerModel import *
 import re
 from zipfile import ZipFile
 import os
-
+from django.contrib.auth.decorators import login_required
 
 # Global variables
 uploadedFile = None
@@ -21,6 +21,8 @@ predictlist = []
 def Landing(request):
     return render(request, 'imageClassification/landing.html')
 
+
+@login_required(login_url='/imageClassification/SignupOrLogin/')
 def Index(request):
     global uploadedFile
     global currentUser
