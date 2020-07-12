@@ -68,7 +68,7 @@ def processSignup(request):
 
         if tempUser == False:
             currentUser = Users.objects.create(FullName=fullname, Email=email, Password=password)
-            return redirect(index)
+            return redirect(Index)
         else:
             isinvalidUser = False
             isUserExist = True
@@ -89,7 +89,7 @@ def processLogin(request):
 
         try:
             currentUser = Users.objects.get(Email=email, Password=password)
-            return redirect(index)
+            return redirect(Index)
         except Users.DoesNotExist:
             tempUser = False
         
