@@ -1,0 +1,62 @@
+html{
+    scroll-behavior: smooth;
+}
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #E95420;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+.jumbotron{
+    background-image: linear-gradient(to right, rgba(40,40,42,0.7), rgba(84,84,88,0.7010154403558299)),url("../assets/images/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    border-radius: 0;
+}
+
+.jumbotron__container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-process{
+    background-image: linear-gradient(to right, rgba(40,40,42,0.7), rgba(84,84,88,0.7010154403558299)),url("../assets/images/section-1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 120vh;
+}
+
+.section-login{
+    background-image: linear-gradient(to right, rgba(40,40,42,0.7), rgba(84,84,88,0.7010154403558299)),url("../assets/images/login-background1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 90vh;
+}
